@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terabox Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f0f0f0;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 80%;
+            padding: 10px;
+            margin: 10px 0;
+            font-size: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .video-js {
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        .details {
+            margin-top: 20px;
+        }
+
+        .details img {
+            margin-top: 10px;
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .details a {
+            display: block;
+            margin-top: 10px;
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .details a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <link href="https://unpkg.com/video.js@7/dist/video-js.min.css" rel="stylesheet" />
+
+    <!-- forest -->
+    <link href="https://unpkg.com/@videojs/themes@1/dist/forest/index.css" rel="stylesheet" />
+</head>
+
+<body>
+    <div class="container">
+        <h1>Terabox Player</h1>
+        <input type="text" id="urlInput" placeholder="Enter Terabox URL">
+        <button onclick="fetchVideoData()">Fetch Video</button>
+        <div id="videoDetails" style="display: none;">
+            <h2 id="videoTitle"></h2>
+            <div class="video">
+                <video id="my-video" class="video-js vjs-theme-forest" controls preload="auto" width="640" height="264"
+                    data-setup="{}">
+                    <source src="" type="video/mp4" />
+                    <p class="vjs-no-js">
+                        To view this video please enable JavaScript, and consider upgrading to a
+                        web browser that
+                        <a href="https://videojs.com/html5-video-support/" target="_blank">supports HTML5 video</a>
+                    </p>
+                </video>
+            </div>
+            <div class="details">
+                <a rel="noreferrer noopener" id="fastDownload" href="#" target="_blank">Fast Download</a>
+                <a rel="noreferrer noopener" id="hdDownload" href="#" target="_blank">HD Video</a>
+                <img id="videoThumbnail" src="" alt="Thumbnail">
+            </div>
+        </div>
+    </div>
+
+    <script>
+        async function fetchVideoData() {
+            const urlInput = document.getElementById('urlInput').value;
+            const videoDetails = document.getElementById('videoDetails');
+            const videoTitle = document.getElementById('videoTitle');
+            const videoThumbnail = document.getElementById('videoThumbnail');
+            const videoPlayer = videojs('my-video');
+            const fastDownload = document.getElementById('fastDownload');
+            const hdDownload = document.getElementById('hdDownload');
+
+            const id = urlInput.split("/").pop();
+
+            let response = await fetch(`https://wholly-api.skinnyrunner.com/get/website-data.php?get_html=https://www.terabox.tech/api/yttera?id=${id}`);
+            response = await response.text();
+            const data = JSON.parse(response);
+
+            const videoData = data.response[0];
+
+            videoTitle.innerText = videoData.title;
+            videoThumbnail.src = videoData.thumbnail;
+            fastDownload.href = videoData.resolutions["Fast Download"];
+            hdDownload.href = videoData.resolutions["HD Video"];
+
+            videoPlayer.src({ type: 'video/mp4', src: "https://apis.forn.fun/tera/data.php?id=" + id });
+            videoPlayer.poster(videoData.thumbnail);
+
+            videoDetails.style.display = "block";
+        }
+    </script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/video.js/7.0.0/video.min.js"></script>
+
+</body>
+
+</html>
