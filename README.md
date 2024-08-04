@@ -2,11 +2,23 @@
 
 **Download and Play Terabox Videos Directly**
 
-**Website:** [https://www.terabox.tech](https://www.terabox.tech)
+**Website:** [https://www.terabox.tech](https://bit.ly/teraboxtechgithub)
 
-**Telegram Bot:** [https://t.me/terasop_bot](https://t.me/terasop_bot?start=6795784679)
+**Telegram Bot:** [https://t.me/terasop_bot](https://bit.ly/terasop_bot)
 
 ![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Ftechshade%2Fterabox-player&countColor=%23263759)
+
+<div style="text-align: center;">
+  <div style="display: inline-block; margin-right: 20px;">
+    <img src="https://github.com/user-attachments/assets/4f1d0820-d229-403b-a457-e08e0c71dc96" alt="bit ly_teraboxtechgithub" style="width: 250px;" />
+    <p><strong>Website:</strong> <a href="https://bit.ly/teraboxtechgithub">https://www.terabox.tech</a></p>
+  </div>
+  <div style="display: inline-block;">
+    <img src="https://github.com/user-attachments/assets/c037f6ee-9130-4831-a860-41677130bc5a" alt="bit ly_teraboxtechgithub" style="width: 250px;" />
+    <p><strong>Telegram Bot:</strong> <a href="https://bit.ly/terasop_bot">https://t.me/terasop_bot</a></p>
+  </div>
+</div>
+
 
 ## Introduction
 
