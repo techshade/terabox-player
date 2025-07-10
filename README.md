@@ -2,7 +2,7 @@
 
 **Download and Play Terabox Videos Directly**
 
-**Website:** [https://www.terabox.tech](https://bit.ly/teraboxtechgithub)
+**Website:** [https://30tools.com/terabox-downloader](https://30tools.com/terabox-downloader)
 
 **Telegram Bot:** [https://t.me/terasop_bot](https://bit.ly/terasop_bot)
 
@@ -11,7 +11,7 @@
 <div style="text-align: center;">
   <div style="display: inline-block; margin-right: 20px;">
     <img src="https://github.com/user-attachments/assets/4f1d0820-d229-403b-a457-e08e0c71dc96" alt="bit ly_teraboxtechgithub" style="width: 250px;" />
-    <p><strong>Website:</strong> <a href="https://bit.ly/teraboxtechgithub">https://www.terabox.tech</a></p>
+    <p><strong>Website:</strong> <a href="https://bit.ly/teraboxtechgithub">https://30tools.com/terabox-downloader</a></p>
   </div>
   <div style="display: inline-block;">
     <img src="https://github.com/user-attachments/assets/c037f6ee-9130-4831-a860-41677130bc5a" alt="bit ly_teraboxtechgithub" style="width: 250px;" />
@@ -32,7 +32,7 @@ Welcome to the ultimate solution for downloading and playing Terabox videos onli
 
 ## How to Use
 
-1. Visit our website at [terabox.tech](https://www.terabox.tech).
+1. Visit our website at [30tools.com/terabox-downloader](https://30tools.com/terabox-downloader).
 2. Use our Telegram Bot for direct downloads: [https://t.me/terasop_bot](https://t.me/terasop_bot?start=6795784679).
 
 With our service, you can convert **terabox links** into downloadable files. Our **terabox link converter** ensures that you can easily access **terabox direct videos** and **terabox direct files**.
@@ -47,7 +47,7 @@ With our service, you can convert **terabox links** into downloadable files. Our
 
 Become part of our growing community of Terabox video enthusiasts. Use our platform today to download and play your favorite videos with ease.
 
-**Website:** [https://www.terabox.tech](https://www.terabox.tech)  
+**Website:** [https://30tools.com/terabox-downloader](https://30tools.com/terabox-downloader)  
 **Telegram Bot:** [https://t.me/terasop_bot](https://t.me/terasop_bot?start=6795784679)
 
 ![Visitors](https://api.visitorbadge.io/api/combined?path=https%3A%2F%2Fgithub.com%2Ftechshade%2Fterabox-player&countColor=%23263759)
